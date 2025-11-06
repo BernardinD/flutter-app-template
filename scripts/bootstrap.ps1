@@ -10,7 +10,7 @@ $module    = Join-Path $cacheRoot "BootstrapTools.psm1"
 
 if (-not (Test-Path $module)) {
   Write-Host "Downloading Flutter Bootstrap Tools v$Version..."
-  $zipUrl = "https://github.com/<OWNER_OR_ORG>/flutter-bootstrap-tools/releases/download/v$Version/flutter-bootstrap-tools_$Version.zip"
+  $zipUrl = "https://github.com/BernardinD/flutter-bootstrap-tools/releases/download/v$Version/flutter-bootstrap-tools_$Version.zip"
   $zip    = Join-Path $env:TEMP "flutter-bootstrap-tools_$Version.zip"
   Invoke-WebRequest $zipUrl -OutFile $zip
   Expand-Archive -Path $zip -DestinationPath $cacheRoot -Force
