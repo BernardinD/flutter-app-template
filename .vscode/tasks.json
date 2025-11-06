@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Bootstrap dev env",
+      "type": "shell",
+      "command": "pwsh",
+      "args": ["-NoProfile","-ExecutionPolicy","Bypass","-File","scripts/bootstrap.ps1"],
+      "problemMatcher": []
+    }
+  ]
+}
